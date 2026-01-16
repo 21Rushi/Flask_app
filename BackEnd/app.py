@@ -11,12 +11,6 @@ client = MongoClient(MONGO_URI)
 db = client["test_db"]
 collection = db["test_collection"]
 
-
-# @app.route("/api")
-# def api_data():
-#     file = os.path.join(os.path.dirname(__file__), "data.json")
-#     data = json.load(open(file))
-#     return jsonify(data)
 @app.route("/api")
 def api_data():
     try:
